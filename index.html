@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Survey Form Description</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">
+        Name: <input type="text" name="name" id="name" placeholder="Enter a name" required>
+      </label>
+      <label id="email-label" for="email">
+        Email: <input type="email" name="email" id="email" placeholder="Enter an email" required>
+      </label>
+      <label id="number-label" for="number">
+        Rate the project: <input type="number" name="number" id="number" min="1" max="5"
+          placeholder="Please enter a number">
+      </label>
+      <label>How did you hear about us?
+        <select name="referrer" id="dropdown">
+          <option value="" selected>(select one)</option>
+          <option value="1">Search Engine</option>
+          <option value="2">Twitter</option>
+          <option value="3">Email</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+      <label><input type="radio" name="account-type" class="inline" value="trial" /> Free Trial Account</label>
+      <label><input type="radio" name="account-type" class="inline" value="pro" /> Pro Account</label>
+      <label>
+        <input type="checkbox" name="terms" class="inline" checked value="newsletter" /> Check to subscribe to our
+        newsletter
+      </label>
+      <label>
+        <input type="checkbox" name="terms" class="inline" required value="privacy_statement" /> I have read and accept
+        The <a href="https://www.freecodecamp.org/news/terms-of-service/">Privacy Statement</a>
+      </label>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </fieldset>
+    <button id="submit">Submit</button>
+  </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
